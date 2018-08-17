@@ -1,0 +1,40 @@
+body {
+
+}
+h1{
+    font-family: Georgia; 
+    font-weight: bold;
+}
+.jumbotron {
+    font-family: Georgia; 
+    font-weight: bold;
+    background-color: black;
+}
+h4 {
+    font-family: Georgia; 
+    font-weight: bold;
+    background-color: rgb(135, 135, 136);
+    margin-right: 10px;
+}
+.card {
+    font-family: Georgia;  
+}
+th {
+    font-family:  Georgia; 
+    text-align: center;
+    font-size: 16px;
+
+}.firstCol {
+    
+    
+}
+
+.sideCol {
+    
+}
+.form-control-sm{
+  font-family: Georgia; 
+  font-weight: bold;
+  font-size: 14px;
+}
+

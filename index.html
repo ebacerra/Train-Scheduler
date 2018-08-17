@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Train-Scheduler/assets/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container text center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1>OnTime Express</h1>
+                    <h5>Time: </h5>
+                </div>
+            </div>
+        </div>
+        <!-- 1st row with tables -->
+        <div class="row">
+            <div class="col-md-12 firstCol">
+                <div class="card">
+                    <h4>Current Train Time</h4>
+                    <table>
+                        <tr id="tr1">
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Next Arrival</th>
+                            <th>Frequency</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                        <tr>
+                            <td>Point A</td>
+                            <td>MG Station</td>
+                            <td>'data'</td>
+                            <td>'data'</td>
+                            <td>'data'</td>
+                            <tr>
+                                <td>Point B</td>
+                                <td>Union Station</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                            </tr>
+                            <tr>
+                                <td>Point C</td>
+                                <td>West Side</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                            </tr>
+                            <tr>
+                                <td>Point D</td>
+                                <td>SE Subarbs</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                            </tr>
+                            <tr>
+                                <td>Point E</td>
+                                <td>NW Suburbs</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                                <td>'data'</td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row"></div>
+            <div class="col-md-12 sideCol">
+                <div class="card">
+                    <h4>Add Train</h4>
+                    <label for="trainName">Train Name</label>
+                    <input id="trainName" type="text" class="form-control-sm">
+                    <label for="destination">Destination</label>
+                    <input id="destination" type="text" class="form-control-sm">
+                    <label for="firstTrain">Firt Train Time (HH:mm - military time)</label>
+                    <input id="firstTrain" type="text" class="form-control-sm">
+                    <label for="frequency">Frequency</label>
+                    <input id="frequency" type="text" class="form-control-sm">
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary btn-sm">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- SCRIPTS HERE -->
+        <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBthPb2dpUnCHL0xWFcZdA8mx-ItWltr3g",
+                authDomain: "inclass-project18.firebaseapp.com",
+                databaseURL: "https://inclass-project18.firebaseio.com",
+                projectId: "inclass-project18",
+                storageBucket: "inclass-project18.appspot.com",
+                messagingSenderId: "903136299485"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+            crossorigin='anonymous'></script>
+        <script src="../Train-Scheduler/assets/javascript.js"></script>
+</body>
+
+</html>
