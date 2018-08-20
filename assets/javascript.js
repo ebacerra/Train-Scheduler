@@ -49,10 +49,7 @@ $(document).ready(function () {
 
         $("#frequency").text();
     }
-    // database.ref().on("value", function (snapshot) {
-    // console.log(snapshot.val());
-    // for (key in data) {
-    // }
+
 
     // my submit button
     $("button").on("click", function () {
