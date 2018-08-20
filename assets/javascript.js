@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     database.ref().on("child_added", function (snapshot) {
         var data = snapshot.val();
-        console.log(data);
+        console.log('destination', data.Destination)
 
         //   *** tried following this from the lecture video last week. Mark had mention something about the key to the object due to data coming back as "undefined"***
         // for (key in data) {
@@ -20,15 +20,15 @@ $(document).ready(function () {
         //     table.append(`<h5>Destination: ${data[key].destination}</h5>`);
         //     table.append(`<h5>First Train Time: ${data[key].firstTrain}</h5>`);
         //     table.append(`<h5>Frequency: ${data[key].frequency}</h5>`);
-
+        //     $(#btn).append(table);
         // }
 
 
         $("table").append(`<tr>
-        <td>${data.train}</td>
-        <td>${data.destination}</td>
-        <td>${data.firstTrain}</td>
-        <td>${data.frequency}</td>
+        <td>${data.Train}</td>
+        <td>${data.Destination}</td>
+        <td>${data.FirstTrain}</td>
+        <td>${data.Frequency}</td>
         </tr>`);
 
     });
